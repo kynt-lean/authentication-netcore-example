@@ -1,0 +1,22 @@
+version: '3'
+
+#VOLUMES
+# volumes:
+#   my-dir:
+#     dirver
+
+#NETWORK
+# networks: 
+#   web-net:
+#     external: true
+
+#SERVICES
+services:
+  auth-api:
+    container_name: becamexidc_auth
+    build: ./
+    image: becamexidc/xlnt_auth-api:v1.1
+    hostname: auth-api
+    restart: always   
+    # networks: 
+    #     - web-net

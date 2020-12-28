@@ -1,0 +1,22 @@
+﻿
+syntax = "proto3";
+
+package BecamexIDC;
+
+service FactoryGRPCService{
+  rpc GetAllFactory(FactoryRequest) returns (FactoryReply);
+}
+message FactoryGRPC{
+  int32 FactoryId =1;
+  int32 FactoryGroupId =2;
+  string FactoryCode =3;
+  string FactoryName=4;
+  int32 FactoryType = 5;
+  int32 Status = 6;
+  }
+message FactoryReply{
+  repeated FactoryGRPC output = 1;
+}
+message FactoryRequest{
+
+}

@@ -1,0 +1,27 @@
+
+syntax = "proto3";
+
+package BecamexIDC;
+
+service FunctionGRPCService{
+  rpc GetAllFunction(FunctionRequest) returns (FunctionReply);
+}
+message Entity{
+  int32 Id =1;
+  int32 ModuleId =2;
+  string Code =3;
+  int32 ParentId =4;
+  string NameVi =5;
+  string NameEn =6;
+  string Icon =7;
+  string Link =8;
+  int32 Status =9;
+  string CreateBy =10;
+  string ModifyBy =11;
+  }
+message FunctionReply{
+  repeated Entity output = 1;
+}
+message FunctionRequest{
+ 
+}

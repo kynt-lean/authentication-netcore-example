@@ -1,0 +1,25 @@
+﻿
+syntax = "proto3";
+
+package BecamexIDC;
+
+service ModuleGRPCService{
+  rpc GetAllModules(ModuleRequest) returns (ModuleReply);
+}
+message ModuleGrpc{
+  int32 Id =1;
+  string Name_Vi =2;
+  string Name_En =3;
+  string Icon =4;
+  string Link =5;
+  int32 Status =6;
+  string CreateBy =7;
+  string ModifyBy =8;
+  bool IsPermission =9;
+  }
+message ModuleReply{
+  repeated ModuleGrpc output = 1;
+}
+message ModuleRequest{
+ 
+}

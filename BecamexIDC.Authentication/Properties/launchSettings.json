@@ -1,0 +1,75 @@
+{
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:35111",
+      "sslPort": 44370
+    }
+  },
+  "$schema": "http://json.schemastore.org/launchsettings.json",
+  "profiles": {
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "launchUrl": "swagger/index.html",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "BCM_AUTH_CONNECTION": "Server=192.168.103.96;Database=Dev_BCM_Auth;user id=sa;password=Becamex@1234;Trusted_Connection=False;MultipleActiveResultSets=true",
+        "BCM_AUTH_SHAREPOINT_CONNECTION": "Server=192.168.103.83;Database=UAT_Content_home;user id=becamexapp;password=Becamex@123;Trusted_Connection=False;MultipleActiveResultSets=true",
+        "BCM_MOBILE_APP_CONNECTION": "Server=192.168.103.83;Database=BCM_App;user id=becamexapp;password=Becamex@123;Trusted_Connection=False;MultipleActiveResultSets=true",
+        "BCM_LDAP_ADDRESS": "192.168.100.3",
+        "BCM_LDAP_PORT": "389",
+        "BCM_LDAP_DOMAIN": "becamex",
+        "BCM_LDAP_ACCOUNT": "Redmine",
+        "BCM_LDAP_PASSWORD": "Bcm@123456",
+        "BCM_MAIL_SERVER": "mail.becamex.com.vn",
+        "BCM_MAIL_PORT": "25",
+        "BCM_MAIL_SENDERNAME": "Admin",
+        "BCM_MAIL_SENDEREMAIL": "support@becamex.com.vn",
+        "BCM_MAIL_ACCOUNT": "support@becamex.com.vn",
+        "BCM_MAIL_PASSWORD": "becamex@123",
+        "BCM_WCF_ADDRESS": "https://eofficeuat.becamex.com.vn/",
+        "BCM_WCF_AUTHENTICATION": "_vti_bin/authentication.asmx",
+        "BCM_SOCIAL_NETWORK": "https://mobile.becamex.com.vn/",
+        "BCM_GRPC": "http://localhost:3456/",
+        "BCM_API_GATEWAY": "http://api.becamex.com.vn:8002/"
+      }
+    },
+    "BecamexIDC.Authentication": {
+      "commandName": "Project",
+      "launchBrowser": true,
+      "launchUrl": "swagger/index.html",
+      "environmentVariables": {
+        "ASPNETCORE_ENVIRONMENT": "Development",
+        "BCM_AUTH_CONNECTION": "Server=192.168.103.96;Database=Dev_BCM_Auth;user id=sa;password=Becamex@1234;Trusted_Connection=False;MultipleActiveResultSets=true",
+        "BCM_AUTH_SHAREPOINT_CONNECTION": "Server=192.168.103.83;Database=UAT_Content_home;user id=becamexapp;password=Becamex@123;Trusted_Connection=False;MultipleActiveResultSets=true",
+        "BCM_MOBILE_APP_CONNECTION": "Server=192.168.103.83;Database=BCM_App;user id=becamexapp;password=Becamex@123;Trusted_Connection=False;MultipleActiveResultSets=true",
+        "BCM_LDAP_ADDRESS": "192.168.100.3",
+        "BCM_LDAP_PORT": "389",
+        "BCM_LDAP_DOMAIN": "becamex",
+        "BCM_LDAP_ACCOUNT": "Redmine",
+        "BCM_LDAP_PASSWORD": "Bcm@123456",
+        "BCM_MAIL_SERVER": "mail.becamex.com.vn",
+        "BCM_MAIL_PORT": "25",
+        "BCM_MAIL_SENDERNAME": "Admin",
+        "BCM_MAIL_SENDEREMAIL": "support@becamex.com.vn",
+        "BCM_MAIL_ACCOUNT": "support@becamex.com.vn",
+        "BCM_MAIL_PASSWORD": "becamex@123",
+        "BCM_WCF_ADDRESS": "https://eofficeuat.becamex.com.vn/",
+        "BCM_WCF_AUTHENTICATION": "_vti_bin/authentication.asmx",
+        "BCM_SOCIAL_NETWORK": "https://mobile.becamex.com.vn/",
+        "BCM_API_GATEWAY": "http://api.becamex.com.vn:8008/",
+        "BCM_GRPC": "http://localhost:3456/"
+      },
+      "applicationUrl": "http://localhost:6789"
+    },
+    "Docker": {
+      "commandName": "Docker",
+      "launchBrowser": true,
+      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/swagger/index.html",
+      "publishAllPorts": true,
+      "useSSL": true
+    }
+  }
+}

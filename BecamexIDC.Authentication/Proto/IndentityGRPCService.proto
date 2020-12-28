@@ -1,0 +1,23 @@
+﻿
+syntax = "proto3";
+
+package BecamexIDC;
+
+
+/* SearchRequest represents a search query, with pagination options  */
+
+service IndentityGRPCService{
+  rpc GetUserNameById(req_GetUserNameById) returns (res_GetUserNameById); 
+}
+
+message req_GetUserNameById{
+  repeated proto_User User = 1;
+}
+message res_GetUserNameById{
+  repeated proto_User User = 1;
+}
+
+message proto_User {
+  string Id = 1;
+  string UserName = 2;
+}
